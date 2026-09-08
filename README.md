@@ -46,3 +46,13 @@ Real-time IoT streaming pipeline for micro-climate supply chain analytics.
 
 Python IoT Simulator -> Apache Kafka -> Python Ingestion Bridge -> Snowflake -> Superset (in progress)
 
+
+
+\## Current Status
+
+\- Week 1 ingestion pipeline fully verified (Kafka -> Snowflake)
+
+\- Resolving Superset Snowflake driver integration via runtime installation
+
+\- Preparing to begin Week 2 (dbt transformation layer)
+
