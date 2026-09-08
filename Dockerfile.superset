@@ -1,4 +1,4 @@
 FROM apache/superset:latest
 USER root
-RUN /app/.venv/bin/pip install snowflake-sqlalchemy
+RUN pip3 install snowflake-sqlalchemy
 USER superset
