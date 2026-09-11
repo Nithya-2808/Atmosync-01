@@ -48,11 +48,22 @@ Python IoT Simulator -> Apache Kafka -> Python Ingestion Bridge -> Snowflake -> 
 
 
 
-\## Current Status
 
-\- Week 1 ingestion pipeline fully verified (Kafka -> Snowflake)
 
-\- Resolving Superset Snowflake driver integration via runtime installation
+\## Week 1 - COMPLETE
 
-\- Preparing to begin Week 2 (dbt transformation layer)
+\- Kafka + Zookeeper streaming pipeline verified
+
+\- Snowflake data warehouse storing live sensor data
+
+\- Superset connected to Snowflake and successfully querying data
+
+\- All Week 1 deliverables (Ingestion Architecture + BI Foundations) finished
+
+## Update - Docker Build Network Issue
+
+Discovered that Docker's build-time process cannot reach the internet on this
+machine (Network is unreachable error), even though regular running containers
+have internet access. Switching strategy to install the Snowflake driver into
+a live running container instead of during image build.
 
