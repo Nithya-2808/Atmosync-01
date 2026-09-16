@@ -1,0 +1,25 @@
+version: 2
+
+models:
+  - name: stg_container_telemetry
+    description: "Cleaned container telemetry data parsed from raw Kafka JSON payloads."
+    columns:
+      - name: container_id
+        description: "Unique identifier for the shipping container."
+        tests:
+          - not_null
+
+      - name: temperature_c
+        description: "Container internal temperature in Celsius."
+        tests:
+          - not_null
+
+      - name: humidity_pct
+        description: "Container internal humidity percentage."
+        tests:
+          - not_null
+
+      - name: event_time
+        description: "Timestamp of the sensor reading, converted from Unix epoch."
+        tests:
+          - not_null
