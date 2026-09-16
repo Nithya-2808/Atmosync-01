@@ -1,0 +1,13 @@
+commodity,market,price_per_kg,currency,price_date
+avocado,Los Angeles,4.20,USD,2026-09-01
+avocado,Mexico City,2.10,USD,2026-09-01
+avocado,Chicago,4.50,USD,2026-09-01
+avocado,Houston,3.90,USD,2026-09-01
+avocado,Los Angeles,4.35,USD,2026-09-08
+avocado,Mexico City,2.05,USD,2026-09-08
+avocado,Chicago,4.60,USD,2026-09-08
+avocado,Houston,4.00,USD,2026-09-08
+banana,Los Angeles,0.85,USD,2026-09-01
+banana,Mexico City,0.45,USD,2026-09-01
+banana,Chicago,0.90,USD,2026-09-01
+banana,Houston,0.80,USD,2026-09-01
