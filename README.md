@@ -34,17 +34,18 @@ Real-time IoT streaming pipeline for micro-climate supply chain analytics.
 
 
 
-## Week 1 Status
-
-* Snowflake account activated, database/schema/table created
-* Kafka to Snowflake pipeline verified end-to-end with live data
-* Superset installed via Docker; currently resolving Snowflake driver integration
-
 &#x20;
 
 \## Architecture
 
 Python IoT Simulator -> Apache Kafka -> Python Ingestion Bridge -> Snowflake -> Superset (in progress)
+
+## Update - Docker Build Network Issue
+
+Discovered that Docker's build-time process cannot reach the internet on this
+machine (Network is unreachable error), even though regular running containers
+have internet access. Switching strategy to install the Snowflake driver into
+a live running container instead of during image build.
 
 
 
@@ -60,10 +61,51 @@ Python IoT Simulator -> Apache Kafka -> Python Ingestion Bridge -> Snowflake -> 
 
 \- All Week 1 deliverables (Ingestion Architecture + BI Foundations) finished
 
-## Update - Docker Build Network Issue
 
-Discovered that Docker's build-time process cannot reach the internet on this
-machine (Network is unreachable error), even though regular running containers
-have internet access. Switching strategy to install the Snowflake driver into
-a live running container instead of during image build.
+
+\## Progress Update
+
+
+
+\*\*Week 1 — Ingestion \& BI Foundation (Complete)\*\*
+
+\- Python IoT simulator generating mock container telemetry (temperature, humidity, vibration)
+
+\- Kafka + Zookeeper streaming pipeline, verified end-to-end into Snowflake
+
+\- Apache Superset deployed via Docker and connected to Snowflake
+
+
+
+\*\*Week 2 — ELT Pipeline (In Progress)\*\*
+
+\- dbt Core initialized and connected to Snowflake
+
+\- Staging model (`stg\_container\_telemetry`) cleaning raw JSON payloads, with proper timestamp conversion
+
+\- Mock commodity pricing data loaded as a dbt seed
+
+\- Automated dbt data quality tests (not-null checks) passing on all key columns
+
+\- Baseline Superset dashboards in progress
+
+
+
+\*\*Next Steps\*\*
+
+\- Build baseline visualization charts (temperature trends, container health)
+
+\- Write dbt models to calculate spoilage arbitrage metrics
+
+\- Build the arbitrage dashboard highlighting at-risk containers
+
+\- Set up automation and alerting
+
+
+
+
+
+
+
+
 
