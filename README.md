@@ -101,6 +101,18 @@ a live running container instead of during image build.
 
 \- Set up automation and alerting
 
+## Superset Dashboard
+
+Built the "AtmoSync Container Health Dashboard" with the following charts:
+- Avg Temperature Over Time (line chart)
+- Avg Humidity by Container (bar chart)
+- Avg Vibration Over Seconds (scatter plot)
+- Temperature Heatmap by Container (heatmap)
+- Temperature by Humidity Level (sunburst chart)
+- Max Temperature by Container (bar chart) — in progress
+
+Dashboard combines real-time and aggregate views of live sensor data streamed from Kafka into Snowflake via the dbt staging layer.
+
 
 
 
