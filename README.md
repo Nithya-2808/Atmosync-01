@@ -112,6 +112,7 @@ Built the "AtmoSync Container Health Dashboard" with the following charts:
 - Max Temperature by Container (bar chart) — in progress
 
 Dashboard combines real-time and aggregate views of live sensor data streamed from Kafka into Snowflake via the dbt staging layer.
+Dashboard now includes 10+ charts covering: temperature trends, humidity by container, vibration patterns, temperature heatmaps, humidity-temperature relationships (sunburst), container reading distributions (donut/funnel), and a live sensor readings table.
 
 
 
