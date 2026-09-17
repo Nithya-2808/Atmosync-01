@@ -1,0 +1,17 @@
+origin_market,destination_market,distance_km,travel_hours
+Los Angeles,Los Angeles,0,0
+Los Angeles,Mexico City,2500,30
+Los Angeles,Chicago,2800,32
+Los Angeles,Houston,2200,26
+Mexico City,Los Angeles,2500,30
+Mexico City,Mexico City,0,0
+Mexico City,Chicago,1900,22
+Mexico City,Houston,1200,14
+Chicago,Los Angeles,2800,32
+Chicago,Mexico City,1900,22
+Chicago,Chicago,0,0
+Chicago,Houston,1500,17
+Houston,Los Angeles,2200,26
+Houston,Mexico City,1200,14
+Houston,Chicago,1500,17
+Houston,Houston,0,0
